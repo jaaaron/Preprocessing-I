@@ -78,7 +78,6 @@ html{
 } 
 
 nav {
-	background-color: red;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -98,18 +97,22 @@ nav {
 }
 
 .section2 {
-	background-color:red !important;
 	display: flex;
 	align-content: center;
 	justify-content: space-between;
 	width: 90%;
 	margin-left: 20px;
+	@media screen and (max-width: 500px){
+		flex-direction: column;
+		.sec2-left, .sec2-right{
+			width: 80%;
+		}
+	}
 }
 .sec2-left {
-	width: 43%; 
-}
-.sec2-right {
-	width: 43%; 
+	.sec2-right;
+		width: 43%; 
+		background-color:red;
 }
 .bottom-section {
 	display: flex;
