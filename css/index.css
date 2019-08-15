@@ -143,11 +143,11 @@ hr {
 * {
   box-sizing: border-box;
 }
-html body {
-  height: 100%;
-}
-html body container {
-  width: 80%;
+html {
+  font-family: 'Oswald', sans-serif;
+  margin: auto;
+  text-align: center;
+  width: 90%;
 }
 nav {
   display: flex;
@@ -156,50 +156,45 @@ nav {
   padding: 20px 90px;
   width: 50%;
   margin-left: 50%;
+  /* form */
 }
-@media (max-width: 500px) {
-  nav {
-    background-color: red;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 1%;
-  }
+nav .button {
+  background-color: darkgrey;
 }
-.section1 {
+nav .section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: lightgrey;
-}
-button {
   background-color: darkgrey;
 }
-.section2 {
+nav .section2 {
+  background-color: red !important;
   display: flex;
   align-content: center;
   justify-content: space-between;
+  width: 90%;
   margin-left: 20px;
 }
-.sec2-left {
-  width: 45%;
+nav .sec2-left {
+  width: 23%;
 }
-.sec2-right {
-  width: 45%;
+nav .sec2-right {
+  width: 23%;
 }
-.bottom-section {
+nav .bottom-section {
   display: flex;
   flex-direction: column;
   align-content: center;
   margin-left: 20px;
   margin-top: 30px;
 }
-.bottom-section p {
+nav .bottom-section p {
   margin-top: 30px;
   width: 100%;
   text-align: center;
 }
-footer {
+nav footer {
   background-color: darkgrey;
   padding: 20px;
   margin-top: 20px;
@@ -208,8 +203,7 @@ footer {
   display: flex;
   justify-content: center;
 }
-/* form */
-form {
+nav form {
   display: inline-block;
   text-align: center;
   width: 30%;
@@ -218,10 +212,10 @@ form {
   padding-left: 20px;
   overflow-x: hidden;
 }
-form > :last-child {
+nav form > :last-child {
   margin-bottom: 0;
 }
-form > .fields {
+nav form > .fields {
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
@@ -233,7 +227,7 @@ form > .fields {
   width: calc(100% + 3em);
   margin: -1.5em 0 2em -1.5em;
 }
-form > .fields > .field {
+nav form > .fields > .field {
   -moz-flex-grow: 0;
   -webkit-flex-grow: 0;
   -ms-flex-grow: 0;
@@ -245,12 +239,12 @@ form > .fields > .field {
   padding: 1.5em 0 0 1.5em;
   width: calc(100% - 1.5em);
 }
-form > .fields > .field.half {
+nav form > .fields > .field.half {
   width: calc(50% - 0.75em);
 }
-form > .fields > .field.third {
+nav form > .fields > .field.third {
   width: calc(100%/3 - 0.5em);
 }
-form > .fields > .field.quarter {
+nav form > .fields > .field.quarter {
   width: calc(25% - 0.375em);
 }
