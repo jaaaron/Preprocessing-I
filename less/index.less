@@ -49,6 +49,7 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@cell: "only screen (max-width: 500px)";
 @color1:  lightgrey;
 @color2: darkgrey;
 @LargeText: 56px;
@@ -93,6 +94,19 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	background-color: @color1;
+	
+	h2 {
+		font-size: @LargeText;
+	}
+	
+	h3 {
+		font-size: 30px;
+	}
+
+	h4{
+		font-size:20px;
+	}
+
 	.button;
 }
 
@@ -103,23 +117,51 @@ nav {
 	width: 90%;
 	margin-left: 20px;
 	@media screen and (max-width: 500px){
+		display: flex;
 		flex-direction: column;
-		.sec2-left, .sec2-right{
-			width: 80%;
-		}
+		align-content: center;
+		width: 90%;
+		margin-left: 20px;
 	}
+	h2 {
+		font-size: @LargeText;
+	}
+	
+	h3, p {
+		font-size: 30px;
+	}
+	
+	.sec2-left {
+		width: 43%;
+	}
+
+	.sec2-right {
+		width: 43%;
+	}
+
+		.sec2-left {
+			width: 85%;
+		}
+
+		.sec2-right {
+			width: 85%;
+		}
 }
-.sec2-left {
-	.sec2-right;
-		width: 43%; 
-		background-color:red;
-}
+
 .bottom-section {
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 	margin-left: 20px;
 	margin-top: 30px;
+
+	p {
+		font-size: 30px;
+	}
+
+	h2 {
+		
+	}
 }
 
 .bottom-section p {
